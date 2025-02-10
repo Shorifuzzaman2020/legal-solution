@@ -9,31 +9,57 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<script src="https://kit.fontawesome.com/889e400bff.js" crossorigin="anonymous"></script>
+<style>
+    
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+}
+</style>
 </head>
-<body>
+<body class="eb-garamond">
     <header>
-        <nav>
-            <div class="flex justify-around items-center">
+        <nav class="my-14">
+            <div class="flex mx-4 lg:mx-auto justify-between lg:justify-around items-center">
                 <div>
                     <img src="images/logo2.png" alt="">
                 </div>
-                <div>
-                    <ul class="flex">
+                <div class="hidden lg:block">
+                    <ul class="flex gap-5">
                         <li>Home</li>
-                        <li>Services</li>
-                        <li>Cases</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
+                        <li>Services <i class="fa-solid fa-angle-right"></i></li>
+                        <li>Cases <i class="fa-solid fa-angle-right"></i></li>
+                        <li>Blog <i class="fa-solid fa-angle-right"></i></li>
+                        <li>Contact Us <i class="fa-solid fa-angle-right"></i></li>
                     </ul>
                 </div>
-                <div>
-                    <button>
+                <div class="hidden lg:block">
+                    <button class="bg-[#B68C5A] text-white font-bold w-44 h-14 rounded-lg">
                         Free Consultation
                     </button>
                 </div>
+                <div class="block lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
+            
         </nav>
+        <section class="mx-auto lg:mx-36">
+            <div class="bg-[url('images/banner.png')] bg-cover bg-center h-full rounded-lg lg:p-20">
+                <div>
+                    <h1 class="text-5xl text-white font-bold text-center p-10">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="text-white text-center mb-4">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col lg:flex-row gap-4 items-center justify-center">
+                        <div>
+                            <input class="w-96 h-14 rounded-lg" type="text" placeholder="     Search your services">
+                        </div>
+                        <div>
+                            <button class="bg-[#B68C5A] text-white font-bold w-36 h-14 rounded-lg">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
